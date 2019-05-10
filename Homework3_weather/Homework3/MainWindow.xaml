@@ -1,0 +1,79 @@
+﻿<Window x:Class="Homework3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Homework3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="Date">
+
+        <Label x:Name="LocationLabel" Content="Enter Location Below:" HorizontalAlignment="Left" Margin="10,13,0,0" VerticalAlignment="Top" Width="147" Background="#FFBDBDBD"/>
+        <Button x:Name="GoGet" Content="Go to my location" HorizontalAlignment="Left" Margin="162,44,0,0" VerticalAlignment="Top" Width="103" RenderTransformOrigin="-0.49,-1.762" Height="28" IsDefault="True" Click="GoGet_Click"/>
+        <TextBox x:Name="ConditionsInfo" HorizontalAlignment="Left" Height="31" Margin="125,77,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="255" Background="#FF00FFB9"/>
+        <TextBox x:Name="LocationText" HorizontalAlignment="Left" Height="28" Margin="10,44,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="147"/>
+        <Label x:Name="ConditionsLabel" Content="Conditions" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top" Width="110">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFA09F9F" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <TextBox x:Name="MyLocationMain" HorizontalAlignment="Left" Height="59" Margin="273,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="322" SpellCheck.IsEnabled="True" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="36" Padding="0,0,30,10">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF8F8B8B" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <Calendar HorizontalAlignment="Left" Margin="608,13,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="TemperatureLabel" Content="Temperature" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" Width="110">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFA2A0A0" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <TextBox x:Name="TemperatureInfo" HorizontalAlignment="Left" Height="23" Margin="125,113,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="255" Background="#FF00FFB9"/>
+        <Label x:Name="HumidityLabel" Content="Humidity" HorizontalAlignment="Left" Margin="10,139,0,0" VerticalAlignment="Top" Width="110">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF7C7B7B" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <TextBox x:Name="HumidityInfo" HorizontalAlignment="Left" Height="26" Margin="125,139,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="255" Background="#FF00FFB9"/>
+        <Label x:Name="PressureLabel" Content="Pressure" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.222,-1.11" Width="110">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF7C7878" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <TextBox x:Name="PressureInfo" HorizontalAlignment="Left" Height="26" Margin="125,170,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="255" Background="#FF00FFB9"/>
+        <Label x:Name="VisibilityLabel" Content="Visibility" HorizontalAlignment="Left" Margin="10,201,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.387,0.388" Width="110">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF898888" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <TextBox x:Name="VisibilityInfo" HorizontalAlignment="Left" Height="26" Margin="125,201,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="255" Background="#FF00FFB9"/>
+        <Label x:Name="WindLabel" Content="Wind" HorizontalAlignment="Left" Margin="10,232,0,0" VerticalAlignment="Top" Width="110">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF959494" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <TextBox x:Name="WindInfo" HorizontalAlignment="Left" Height="26" Margin="125,232,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="255" Background="#FF00FFB9"/>
+
+    </Grid>
+</Window>
